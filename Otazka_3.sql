@@ -9,7 +9,7 @@ WITH zmena_ceny AS(
 	WHERE 
 		rok BETWEEN '2006' AND '2018'
 )
-SELECT 
+SELECT
 	zbozi,
 	ROUND(AVG(zmena_ceny_v_procentech), 2) AS prumerna_zmena_v_procentech
 FROM zmena_ceny
